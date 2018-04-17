@@ -6,30 +6,38 @@
 /* General Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body, html {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    color: white;
     font-weight: 400;
     line-height: 28px;
-    background-color: black;
+    background-color: white;
 }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h1 {
-    font-size: 80px;
-    line-height: 100px;
-    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+    font-weight: 600;
     margin-bottom: 18px;
+    color: black;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: dimgray;
 }
 
 p {
     font-size: 16px;
     line-height: 32px;
-    color: white;
     font-weight: 400;
+    color: dimgray;
 }
 
 /* MENU FULLSCREEN
@@ -67,7 +75,7 @@ p {
 .menubtn {
     padding: 24px;
     margin: 44px 0px 0px 0px;
-    background-color: #000000;
+    background-color: #ffffff;
     border:none;
     float: right;
     background-image: url(../images/menu.png);
@@ -111,35 +119,22 @@ p {
     color:dimgray;
 }
 
-/* MAIN TITLE HOVER EFFECT
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.main__title {
-    cursor:default;
-    color: white;
-    text-decoration:none;
-    transition: 0.8s;
-}
-
-.main__title .hover {
-    display:none;
-}
-
-.main__title:hover .normal {
-    display:none;
-}
-
-.main__title:hover .hover {
-    display:inline;
-}
-
 
 /* ELEMENTS STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .hero-header {
-    padding-top: 24%;
+    padding-top: 16%;
+    padding-bottom: 6%;
     position: relative;
+}
+
+.hero-image {
+    background-image: url(https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-0.3.5&s=563a48e2a04ad8fa3cc40f43d8e1b9da&auto=format&fit=crop&w=1949&q=80);
+    background-position: cover;
+    background-position: top;
+    height: 640px;
+    margin-bottom: 6%;
 }
 
 
