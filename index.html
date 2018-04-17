@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- BASICS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+    <title>pawel waraksa - product designer</title>
+  <meta name="description" content="pawel waraksa / product designer">
+  <meta name="author" content="Paweł Waraksa">
+
+  <!-- MOBILE METAS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FAVICON
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta name="google-site-verification" content="wJ0QT1gQZO2svhbDdrF0vJZdm-C3UILeS8yoM0kvW3s" /> 
+    
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    
+</head>
+<body>
+
+        <div class="container">
+        <div class="row">
+            
+        <!-- FULL SCREEN MENU START HERE –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+
+        <div onclick="closeNav()" id="menuFullscreen" class="overlay">
+        <div onclick="closeNav()" id="menuContent" id="closeButton" class="overlay-content">
+            <a class="menu-element-lg" href="#">About</a>
+            <a class="menu-element-lg" href="#">Work</a>
+            <a class="menu-element-lg" href="#">Thanks you</a>
+            <a class="menu-element-sm"href="#">Manifesto</a>
+            <a class="menu-element-sm"href="#">Design</a>
+            <a class="menu-element-sm"href="#">Contact </a>
+        </div>
+        </div>
+
+        <button class="menubtn" onclick="openNav()"></button>
+    
+        <!-- FULL SCREEN MENU ENDS HERE ––––––––––––––––––––––––––––––––––––– -->   
+           
+            <div class="hero-header nine columns"> 
+                <h1 class="main__title">
+                    <span class="normal">Product Designer &mdash;<br>
+                    Digital Experience Maker</span>
+                    <span class="hover">Making technology more human with design</span>
+                </h1>
+                <div class="nine columns">
+                <p>I'm currently working at Netguru, where I'm responsible for Brand Experience.
+                   And this is a place where you can learn more about me and my work. </p>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    
+        <!-- MENU SCRIPT -->
+        <script>     
+        function openNav() {
+            document.getElementById("menuFullscreen").style.height = "100%";
+            document.getElementById("menuContent").style.opacity = "1";
+        }
+        function closeNav() {
+            document.getElementById("menuFullscreen").style.height = "0%";
+            document.getElementById("menuContent").style.opacity = "0";
+        }
+        </script>
+        
+        <!-- HORIZONTAL SCROLL SCRIPT -->
+        <script>    
+        $(document).ready(function() {
+        var container_width = 400 * $(".container-inner a").length;
+        $(".container-inner").css("width", 4000);
+        });    
+        </script>
+    
+</body>
+</html>
