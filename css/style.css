@@ -1,38 +1,34 @@
 /*
 * Design and Code: Paweł Waraksa
-* http://www.pawelwa.com
-* https://www.dribbble.com/pawelwaraksa
 */
 
 
-/* Body Settings
+/*  BODY SETTINGS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body,html {
-  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: #777;
+  color: #555555;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 28px;    
 }
 
-a {
-    color: #8d8f96;;
-    font-size: 16px;
-    letter-spacing: 0.4px;
-    text-decoration: none;
+/*  SPACERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.spacer-sm {
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-a:hover {
-    color: #000000;
+.spacer-lg {
+    height: 440px;
 }
 
-p {
-    color: #8d8f96;
-    font-size: 16px;
-    letter-spacing: 0.4px;
+.spacer-bg {
+    height: 640px;
 }
-
 
 /* MENU FULLSCREEN
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -44,10 +40,23 @@ p {
     z-index: 1; 
     left: 0;
     top: 0;
-    background-color: #0c0c0c;
+    background-color: #ffffff;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.6s;
+}
+
+.overlay-bg {   
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: -1; 
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
 }
 
 .overlay-content {
@@ -58,24 +67,13 @@ p {
     float:right;
     opacity: 0;
     transition: 0.8s;
+    color: #000000;
 }
 
 @media (max-width: 1024px) {
 .overlay-content {
     top: 6%; 
 }
-}
-
-.menubtn {
-    padding: 24px;
-    margin: 44px 0px 0px 0px;
-    background-color: #ffffff;
-    border:none;
-    float: right;
-    background-image: url(../images/menu.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
 }
 
 .overlay a {
@@ -92,9 +90,9 @@ p {
 }
 
 .menu-element-lg {
-    color: white;
+    color: #000000;
     font-size: 31px;
-    font-weight: 400;
+    font-weight: 700;
     padding-bottom: 36px;
 }
 
@@ -106,77 +104,125 @@ p {
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 14px;
-    color: white;
+    color: #555555;
 }
 
 .menu-element-sm:hover {
     color:dimgray;
 }
 
-
-
-/* SECTION 1
+/* NAVIGATION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.navigation {
+    padding-left: 0px;
+    padding-top: 0px;
+}
 
 .logo {
     display:inline-block;
+    margin: 48px 0px 0px 60px;
     font-weight: 900;
     color: #000000;
-    padding: 0px;
 }
 
-.nav {
-    padding-left: 0px;
-    padding-top: 40px;
+.logo:hover {
+    color: #555555;
 }
 
-.nav li {
-    display:inline-block;
+.menubtn {
+    margin: 40px 60px 0px 0px;
+    padding: 20px;
+    background-color: #ffffff;
+    border:none;
     float: right;
-    width: 0 auto;
-    margin-left: 18px;
-    margin-right: 18px;
-    text-align: center;
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
 }
 
-.hero-header {
-    padding-top: 10px;
-    padding-bottom: 140px;  
+/* TYPOGRAPHY
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1 {
+    color: #000000;
+    font-size: 74px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.4em;
 }
 
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px;
+    letter-spacing: 0.4px;
+    line-height: 1.3em;
+}
 
-.hero-header p {
+h3 {
+    
+}
+
+h4 {
+    color: #26ad75;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    letter-spacing: 0.4px;
+    line-height: 1.3em;
+}
+
+p {
     color: #aaaaaa;
     font-size: 16px;
     letter-spacing: 0.4px;
 }
 
-.hero-header h1 {
-    color: #000000;
-    font-size: 48px;
-    font-weight: 300;
-    margin: 0px;
-    letter-spacing: 0.4px;
-    line-height: 1.3em;
-    padding-bottom: 0px;
-    padding-top: 60px;
+a {
+    text-decoration: none;
+    color: 000000;
 }
 
-.hero-header a {
-    background-color: none;
-    padding-left: 24px;
-    padding-right: 24px;
-    color: #aaaaaa;
+
+/* SECTION 1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero-title {
+    padding-top: 28vh;  
+}
+
+.hero-title a {
+    border-bottom: 5px solid black;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.hero-title a:hover {
+    color: #555555;
+    border-bottom: 5px solid #555555;
+}
+
+.hero-description p {
+    color: #555556;
+    line-height: 2.0em;
     font-weight: 400;
-    display: inline-block;
 }
 
 .hero-photo {
-    height: 480px;
+    height: 600px;
     background: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.email-me {
+    margin-top: 40px;
+    color: #26ad75;
 }
 
 /* SECTION 2
@@ -186,21 +232,7 @@ p {
     background-color: #1A1919;
 }
 
-.section-two h1 {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 300;
-    margin: 0px;
-    letter-spacing: 0.4px;
-    line-height: 1.3em;
-    padding-bottom: 0px;
-    padding-top: 120px;
-}
-
 .section-two p {
-    color: #aaaaaa;
-    font-size: 16px;
-    letter-spacing: 0.4px;
     padding-top: 14px;
     padding-bottom: 80px;
 }
