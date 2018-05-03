@@ -4,7 +4,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1024px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -102,6 +102,8 @@
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing */
 .container:after,
 .row:after,
 .u-cf {
