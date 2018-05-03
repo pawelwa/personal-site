@@ -16,26 +16,27 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700,800,900" rel="stylesheet">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+    
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
   <!-- FAVICON
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta name="google-site-verification" content="wJ0QT1gQZO2svhbDdrF0vJZdm-C3UILeS8yoM0kvW3s" /> 
-    
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
+  <meta name="google-site-verification" content="wJ0QT1gQZO2svhbDdrF0vJZdm-C3UILeS8yoM0kvW3s" />   
     
 </head>
 <body>
-
         <div class="container">
         <div class="row">
             
@@ -54,25 +55,72 @@
 
         <button class="menubtn" onclick="openNav()"></button>
     
-        <!-- FULL SCREEN MENU ENDS HERE ––––––––––––––––––––––––––––––––––––– -->   
-           
-            <div class="hero-header nine columns"> 
-                <h1 class="main__title">
-                    <span class="normal">Product Designer &mdash;<br>
-                    Creativity / Design </span>
-                </h1>
-                <div class="nine columns">
-                <h2>I'm currently working at Netguru, where I'm responsible for Brand Experience. And this is a place where you can learn more about me and my work.</h2>
+        <!-- FULL SCREEN MENU ENDS HERE ––––––––––––––––––––––––––––––––––––– --> 
+            
+            <ul class="nav">
+                <a class="logo" href="#">pawel.<font color="#8d8f96">waraksa</font></a>
+            </ul>
+            <div class="hero-header twelve columns"> 
+                <h1>Pawel — A product designer focusing on interactive experiences & mobile apps,
+                    currently Product Designer at Netguru.</h1>
+                <p>I'm currently working at Netguru, where I'm responsible for Brand Experience. And this is a place where you can learn more about me and my work.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="hero-photo u-full-width"></div>
+
+        <div class="section-two-bg u-full-width">
+        <div class="container">
+        <div class="row">
+            <div class="section-two twelve columns"> 
+                <h1>At the beginning it was a side-project but since I was really happy with the results I decided to share it with the designers community</h1>
+            </div>
+            <div class="section-two six columns">
+                <p>Inside this template you'll find a really easy to understand clean
+                    code structure with comments which allows you to easily edit the
+                    template if you have just a basic coding skills.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="features-bg u-full-width">
+            <div class="container">
+            <div class="row">
+                <div class="feature-one four columns">
+                    
+                    <img src="images/icon_one.png" alt="ICON" height="28px" width="28px">
+                    
+                    <h1>Clean and modern design</h1>
+                    <p>Inside this template you'll find a really easy to understand clean code structure with comments.</p>
                 </div>
-            </div>          
+                <div class="feature-two six columns offset-by-two">
+                    
+                    <img src="images/icon_two.png" alt="ICON" height="28px" width="28px">
+                    
+                    <h1>No advanced coding</h1>
+                    <p>Inside this template you'll find a really easy to understand clean code structure with comments.</p>
+                </div>
+            </div>
+            </div>
         </div>
-        </div>
-
-        <div class="u-full-width hero-image">
-        </div>
-
     
-        <!-- MENU SCRIPT -->
+        <div class="container">
+        <div class="row">
+            <div class="section-three six columns offset-by-six"> 
+                <h1>Our projects</h1>
+                <p>Lorem ipsum dolor, sit amest testa puerto, simeana noche astarios.
+                    Dea pora, noi macaharos tueroa.</p>
+            </div>
+            <div class="member-one six columns u-pull-left"></div>
+            <div class="member-two six columns u-pull-right"></div>
+        </div>
+        </div>
+    
+        <div class="side-photo-one eight columns u-full-width u-pull-right"></div>
+        <div class="side-photo-two four columns u-full-width u-pull-left"></div>
+    
+         <!-- MENU SCRIPT -->
         <script>     
         function openNav() {
             document.getElementById("menuFullscreen").style.height = "100%";
@@ -83,14 +131,6 @@
             document.getElementById("menuContent").style.opacity = "0";
         }
         </script>
-        
-        <!-- HORIZONTAL SCROLL SCRIPT -->
-        <script>    
-        $(document).ready(function() {
-        var container_width = 400 * $(".container-inner a").length;
-        $(".container-inner").css("width", 4000);
-        });    
-        </script>
-    
+
 </body>
 </html>

@@ -1,44 +1,38 @@
 /*
 * Design and Code: Paweł Waraksa
+* http://www.pawelwa.com
+* https://www.dribbble.com/pawelwaraksa
 */
 
 
-/* General Styles
+/* Body Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-body, html {
-    font-family: 'Source Sans Pro', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-weight: 400;
-    line-height: 28px;
-    background-color: white;
+body,html {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #777;
+  font-weight: 400;
+  line-height: 28px;
 }
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-h1 {
-    font-size: 60px;
-    line-height: 74px;
-    font-weight: 600;
-    margin-bottom: 18px;
-    color: black;
+a {
+    color: #8d8f96;;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
 }
 
-h2 {
-    font-size: 21px;
-    line-height: 36px;
-    font-weight: 400;
-    margin-bottom: 18px;
-    color: dimgray;
+a:hover {
+    color: #000000;
 }
 
 p {
+    color: #8d8f96;
     font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-    color: dimgray;
+    letter-spacing: 0.4px;
 }
+
 
 /* MENU FULLSCREEN
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -120,234 +114,175 @@ p {
 }
 
 
-/* ELEMENTS STYLES
+
+/* SECTION 1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.logo {
+    display:inline-block;
+    font-weight: 900;
+    color: #000000;
+    padding: 0px;
+}
+
+.nav {
+    padding-left: 0px;
+    padding-top: 40px;
+}
+
+.nav li {
+    display:inline-block;
+    float: right;
+    width: 0 auto;
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: center;
+}
 
 .hero-header {
-    padding-top: 16%;
-    padding-bottom: 6%;
-    position: relative;
-}
-
-.hero-image {
-    background-image: url(https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-0.3.5&s=563a48e2a04ad8fa3cc40f43d8e1b9da&auto=format&fit=crop&w=1949&q=80);
-    background-position: cover;
-    background-position: top;
-    height: 640px;
-    margin-bottom: 6%;
+    padding-top: 10px;
+    padding-bottom: 140px;  
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Skeleton CSS / Do not edit
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-.column,
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 80%;
-    padding: 0px; }
+.hero-header p {
+    color: #aaaaaa;
+    font-size: 16px;
+    letter-spacing: 0.4px;
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 0%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0%; }
-
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
-
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
-
-  .one-half.column                { width: 48%; }
-
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
-
+.hero-header h1 {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0px;
+    letter-spacing: 0.4px;
+    line-height: 1.3em;
+    padding-bottom: 0px;
+    padding-top: 60px;
 }
 
+.hero-header a {
+    background-color: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #aaaaaa;
+    font-weight: 400;
+    display: inline-block;
+}
 
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-.u-pull-right {
-  float: right; }
-.u-pull-left {
-  float: left; }
+.hero-photo {
+    height: 480px;
+    background: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Self Clearing */
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }
-
-
-/* Media Queries
+/* SECTION 2
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.section-two-bg {
+    background-color: #1A1919;
+}
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+.section-two h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px;
+    letter-spacing: 0.4px;
+    line-height: 1.3em;
+    padding-bottom: 0px;
+    padding-top: 120px;
+}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+.section-two p {
+    color: #aaaaaa;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    padding-top: 14px;
+    padding-bottom: 80px;
+}
 
-/* Larger than tablet */
-@media (min-width: 750px) {}
+.features-bg {
+    background-color:#1A1919;
+}
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
+.feature-one {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 100%;
+}
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+.feature-one h1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    padding-top: 14px;
+}
 
+.feature-one p {
+    color: #aaaaaa;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+}
+
+.feature-two {
+    padding-top: 40px;
+    padding-bottom: 180px;
+    height: 100%;
+}
+
+.feature-two h1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    padding-top: 14px;
+}
+
+.feature-two p {
+    color: #aaaaaa;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+}
+
+/* SECTION 3
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-three {
+    margin-bottom: 60px;
+}
+
+.section-three h1 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px;
+    letter-spacing: 0.4px;
+    line-height: 1.3em;
+    padding-bottom: 0px;
+    padding-top: 120px;
+}
+
+.section-three p {
+    color: #aaaaaa;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    padding-top: 14px;
+    padding-bottom: 80px;
+}
+
+.member-one {
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.member-two {
+    margin-top: 120px;
+    height: 600px;
+    background-color: antiquewhite;
+}
 
