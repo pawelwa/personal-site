@@ -54,7 +54,8 @@
         <div class="-full-width hero-section">
             <!-- NAVIGATION BAR START HERE ––––––––––––––––––––––––––––––––––––– --> 
             <ul class="navigation">
-                <a class="logo" href="#">Pawel&nbsp; &#9472; &nbsp;Waraksa</a>
+                <a href="#"><img src="images/logo.png" class="logo-white"></a>
+                <!--<a class="logo" href="#">Pawel&nbsp; &#9472; &nbsp;Waraksa</a> -->
                 <button class="menubtn" onclick="openNav()"></button>
             </ul>
             <!-- NAVIGATION BAR ENDS HERE ––––––––––––––––––––––––––––––––––––– --> 
@@ -83,7 +84,6 @@
         <div class="row">
             <div class="six columns offset-by-six pre-thumbnail">
             <h2>building experiences for your browser & phone in your pocket - to help businesses succeed in digital world we're all part of</h2>    
-            
             <p>As X has gone from one bearded guy in his
                living room to more than 50 people of 20
                nationalities in four offices with real
@@ -92,38 +92,55 @@
             </div>
         </div>
         </div>
+    
         <div class="twelve columns spacer-sm"></div>
+    
         <div class="container">
         <div class="row">
-            <div class="six columns">
+            <div class="six columns u-pull-left">
                 <div class="twelve columns thumbnail-one-photo"></div>
                 <div class="nine columns thumbnail-one-text">
-                    <span class="thumbnail-date">Jan 3</span>
-                    <h4><a href="#">We're cultured</a></h4>
-                    <p>As X has gone from one bearded guy in his
-                       living room to more than 50 people of 20
-                       nationalities in four offices with real
-                       tables and chairs, we’ve started thinking
-                       about how we can keep being ourselves.</p>
+                    <h4><a href="#">Title goes here</a></h4>
+                    <p>Lorem ipsum dolor sit amest esta puerto, los solos
+                    paraido delagdo desajnuar. Familara noceh estarios
+                    puerto lorem ipsume. </p>
                 </div>
             </div>
 
             <div class="six columns u-pull-right">
                 <div class="twelve columns thumbnail-two-photo"></div>
                 <div class="nine columns thumbnail-two-text">
-                    <span class="thumbnail-date">Jan 5</span>
-                    <h4><a href="#">A new look from Reuters.com</a></h4>
-                    <p>We’ve been working hard with our besties at
-                       Reuters to design a new reading experience for
-                       Reuters.com. And it's live!</p>
+                    <h4><a href="#">Title goes here</a></h4>
+                    <p>Lorem ipsum dolor sit amest esta puerto, los solos
+                    paraido delagdo desajnuar. Familara noceh estarios
+                    puerto lorem ipsume. </p>
                 </div>
             </div>
             
-            <div class="twelve columns spacer-sm"></div>
+            <div class="twelve columns spacer-xsm"></div>
             
+            <div class="six columns u-pull-left">
+                <div class="twelve columns thumbnail-three-photo"></div>
+                <div class="nine columns thumbnail-three-text">
+                    <h4><a href="#">Title goes here</a></h4>
+                    <p>Lorem ipsum dolor sit amest esta puerto, los solos
+                    paraido delagdo desajnuar. Familara noceh estarios
+                    puerto lorem ipsume. </p>
+                </div>
+            </div>
+
+            <div class="six columns u-pull-right">
+                <div class="twelve columns thumbnail-four-photo"></div>
+                <div class="nine columns thumbnail-four-text">
+                    <h4><a href="#">Title goes here</a></h4>
+                    <p>Lorem ipsum dolor sit amest esta puerto, los solos
+                    paraido delagdo desajnuar. Familara noceh estarios
+                    puerto lorem ipsume. </p>
+                </div>
+            </div>
+            <div class="twelve columns spacer-sm"></div>
         </div>
-        </div>
-    
+        </div>    
     
         <!-- SECTION 1 ENDS HERE ––––––––––––––––––––––––––––––––––––– -->
     
@@ -144,13 +161,13 @@
                     this down town and act like I don't care.</h1>
             </div>
             <div class="section-two eight columns">
-                <p>Lorem ipsum dolor sit amest esta puerto, los solos
+                 <p>Lorem ipsum dolor sit amest esta puerto, los solos
                     paraido delagdo desajnuar. Familara noceh estarios
                     puerto lorem ipsume. Do ero fuer? Inoches estarai tin
                     macheos. De noche fuertina. Lofem ipsum - durea finad
                     puerina noche esta puertos.</p>
             </div>
-        <div class="twelve columns spacer-xsm"></div>
+        <div class="twelve columns spacer-sm"></div>
         </div>
         </div>
         </div>
@@ -211,10 +228,10 @@
                 <div class="footer-copyright two columns">
                     <p>Copyright © 2018 <br> Pawel Waraksa </p>
                 </div>
-                <div class="footer-title eight columns offset-by-two">
-                    <h1>Don't be a stranger &nbsp; &#9472; &nbsp; get in touch with me if you want
-                        to talk about work opportunities, design, collaboration or memes. Send me memes. </h1>
-                    <button class="footer-button" type="button">email me</button>
+                <div class="footer-title seven columns offset-by-two">
+                    <h1>Learn more about me & my work &nbsp; &#9472; &nbsp; visit my blog and read stories
+                        about design, art, internet & technology around us.</h1>
+                    <button class="footer-button" type="button">Stories</button>
                 </div>
             </div>
             </div>
@@ -250,6 +267,35 @@
             document.getElementById("menuContent").style.opacity = "0";
         }
         </script>
+    
+        <!-- Start of Async Drift Code -->
+            <script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('d24uphtsvwnx');
+</script>
+        <!-- End of Async Drift Code -->
 
 </body>
 </html>

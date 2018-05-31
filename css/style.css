@@ -229,6 +229,13 @@ a {
 /* SECTION 1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.logo-white {
+    margin-top: 44px;
+    margin-left: 40px;
+    height: 32px;
+    width: 50px;
+}
+
 .hero-section {
     background-image: url("../images/hero-img.png");
     background-size: cover;
@@ -284,8 +291,7 @@ a {
 }
 
 .thumbnail-one-photo {
-    height: 528px;
-    margin-right: 40px;
+    height: 420px;
     background: url("../images/thumbnail-01.jpeg");
     background-size: cover;
     background-position: bottom left;
@@ -293,13 +299,33 @@ a {
 }
 
 .thumbnail-one-photo:hover {
-    transform: scale(0.97);
+    transform: scale(0.96);
     transition: 0.4s;
 }
 
+.thumbnail-one-text {
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.thumbnail-one-text h4 {
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-top: 0px;
+    margin-bottom: 8px;
+}
+
+.thumbnail-one-text p {
+    font-size: 16px;
+    color: #807e7e;
+    line-height: 2.1em;
+    font-weight: 400;
+}
+
 .thumbnail-two-photo {
-    height: 528px;
-    margin-left:40px;
+    height: 420px;
     background: url("../images/thumbnail-02.png");
     background-size: cover;
     background-position: center left;
@@ -307,54 +333,94 @@ a {
 }
 
 .thumbnail-two-photo:hover {
-    transform: scale(0.97);
-    transition: 0.4s;
-}
-
-.thumbnail-one-text {
-    padding-top: 28px;
-}
-
-.thumbnail-date {
-    color: #aaaaaa;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.thumbnail-one-text h4 {
-    font-size: 28px;
-    font-weight: 900;
-    line-height: 1.6em;
-    letter-spacing: -0.3px;
-    padding-top: 18px;
-}
-
-.thumbnail-one-text p {
-    font-size: 16px;
-    font-weight: 500;
-    color: #807e7e;
-    line-height: 1.9em;
+    transform: scale(0.96);
 }
 
 .thumbnail-two-text {
-    margin-top: 28px;
+    margin-top: 24px;
+    padding-bottom: 40px;
 }
 
 .thumbnail-two-text h4 {
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.6em;
-    letter-spacing: -0.3px;
-    padding-top: 18px;
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-top: 0px;
+    margin-bottom: 8px;
 }
 
 .thumbnail-two-text p {
     font-size: 16px;
-    font-weight: 500;
     color: #807e7e;
-    line-height: 1.9em;
-    margin-bottom: 10px;
+    line-height: 2.1em;
+    font-weight: 400;
+}
+
+.thumbnail-three-photo {
+    height: 420px;
+    background: url("../images/thumbnail-02.png");
+    background-size: cover;
+    background-position: center left;
+    transition: transform 0.4s;
+}
+
+.thumbnail-three-photo:hover {
+    transform: scale(0.96);
+}
+
+.thumbnail-three-text {
+    margin-top: 24px;
+    padding-bottom: 40px;
+}
+
+.thumbnail-three-text h4 {
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-top: 0px;
+    margin-bottom: 8px;
+}
+
+.thumbnail-three-text p {
+    font-size: 16px;
+    color: #807e7e;
+    line-height: 2.1em;
+    font-weight: 400;
+}
+
+.thumbnail-four-photo {
+    height: 420px;
+    background: url("../images/thumbnail-02.png");
+    background-size: cover;
+    background-position: center left;
+    transition: transform 0.4s;
+}
+
+.thumbnail-four-photo:hover {
+    transform: scale(0.96);
+}
+
+.thumbnail-four-text {
+    margin-top: 24px;
+    padding-bottom: 40px;
+}
+
+.thumbnail-four-text h4 {
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-top: 0px;
+    margin-bottom: 8px;
+}
+
+.thumbnail-four-text p {
+    font-size: 16px;
+    color: #807e7e;
+    line-height: 2.1em;
+    font-weight: 400;
 }
 
 /* SECTION 2
@@ -365,7 +431,7 @@ a {
 }
 
 .breadcrumb-two {
-    margin-bottom: 44px;
+    margin-bottom: 32px;
 }
 
 .breadcrumb-two p {
@@ -381,7 +447,7 @@ a {
 }
 
 .section-two p {
-    padding-top: 40px;
+    padding-top: 24px;
     color: white;
     line-height: 2.1em;
     font-weight: 400;
@@ -394,12 +460,14 @@ a {
 .feature h1 {
     color: white;
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.4px;
     padding-top: 16px;
+    margin-bottom: 8px;
 }
 
 .feature p {
+    margin-top: 0px;
     color: white;
     font-weight: 400;
     font-size: 16px;
