@@ -14,6 +14,6 @@ Check out http://getskeleton.com for documentation and details.
 Naaah, it's not working like that. You can clone it, have fun with it, make changes or just simply see how I've done this but
 it doesn't mean you can copy&paste it under your own url.
 
-I believe you're creative enough to came up with something new.
+I believe you're creative enoug to came up with something new.
 
 👋
