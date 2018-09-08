@@ -146,37 +146,8 @@ body {
     margin: 0px;
 }
 
-.logo {
-    display: inline-block;
-    margin: 52px 0px 0px 60px;
-    font-weight: 600;
-    color: white;
-    position: relative;
-    font-size: 14px;
-}
-
 .logo:hover {
     opacity: 0.7;
-}
-
-.logo-element {
-    display: inline-block;
-    margin: 52px 0px 0px 140px;
-    font-weight: 600;
-    color: white;
-    font-size: 14px;
-    opacity: 0.4;
-}
-
-@media (max-width: 768px) {
-  .logo-element {
-      display: inline-block;
-      margin: 52px 0px 0px 200px;
-      font-weight: 600;
-      color: white;
-      font-size: 14px;
-      opacity: 0;
-  }
 }
 
 .menubtn {
