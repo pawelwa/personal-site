@@ -149,8 +149,8 @@ body {
 .logo {
     display: inline-block;
     margin: 52px 0px 0px 60px;
-    font-weight: 600;
-    color: white;
+    font-weight: 500;
+    color: black;
     position: relative;
     font-size: 14px;
 }
@@ -203,67 +203,44 @@ a {
     color: #000000;
 }
 
-/* SECTION HERO
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.hero-section {
-    background-image: url(../images/blog/hero.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-}
-
-@media (min-height: 768px) {
-  .hero-title-all {
-    padding-top: 48vh;
-  }
-}
-
-.hero-title-all {
-    padding-top: 36vh;
-}
-
-.hero-title h1 {
-    color: white;
-    font-size: 54px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 1.3em;
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-
-.hero-title h2 {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    line-height: 1.8em;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-.hero-title h3 {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    line-height: 1.8em;
-    padding-bottom: 140px;
-    opacity: 0.4;
-}
-
 /* SECTION 0
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.zero-section-bg {
-    background-color: #f4f4f4;
-    height: 600px;
+.post-title h1 {
+  color: black;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 1.6em;
+  opacity: 1;
+}
+
+.post-title h1:hover {
+  opacity: 0.7;
+}
+
+.post-title h2 {
+  color: dimgray;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 1.6em;
+}
+
+.post-1-cover {
+    height: 440px;
+    margin-bottom: 28px;
+    background-image: url(../images/blog/do-we-really-need.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.post-2-cover {
+    height: 440px;
+    margin-bottom: 28px;
+    background-image: url(../images/blog/what-ive-learned.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 /* FOOTER
@@ -277,7 +254,7 @@ a {
 }
 
 .footer-bg {
-    background-color: white;
+    background-color: #f4f4f4;
     transition: 0.4s;
 }
 

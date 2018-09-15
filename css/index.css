@@ -328,7 +328,7 @@ a {
 }
 
 .section-zero-bg {
-    background-image: url(../images/index/zero-section.jpg);
+    background-image: url(../images/index/zero.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -336,10 +336,10 @@ a {
 .section-zero {
     background-color: white;
     height: 0 auto;
+    margin-left: -100px;
 }
 
 .featured-post-title {
-    padding-top: 54px;
     padding-bottom: 20px;
 }
 
@@ -368,7 +368,7 @@ a {
     margin-top: 36px;
     margin-bottom: 60px;
     margin-right: 200px;
-    opacity: 0.1;
+    opacity: 0.05;
 }
 
 .featured-post h1 {
@@ -390,10 +390,10 @@ a {
 
 .featured-post hr {
     border: 1px solid black;
-    width: 40px;
+    width: 28px;
     float: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     margin-right: 200px;
 }
 
