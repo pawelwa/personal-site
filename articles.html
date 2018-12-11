@@ -17,55 +17,53 @@
 
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/articles.css">
     <link rel="stylesheet" href="css/skeleton.css">
 
     <!-- FAVICON –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/fav.png"/>
+
+    <!-- GOOGLE ANALYTICS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="google-site-verification" content="wJ0QT1gQZO2svhbDdrF0vJZdm-C3UILeS8yoM0kvW3s" />
 
 </head>
 <body>
-        <div class="container">
-        <div class="row">
 
-        <!-- FULL SCREEN MENU START HERE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <div onclick="closeNav()" id="menuFullscreen" class="overlay">
-        <div onclick="closeNav()" id="menuContent" id="closeButton" class="overlay-content">
-            <a class="menu-element-lg" href="./about.html">About me</a>
-            <a class="menu-element-lg" href="./case-studies.html">Case Studies</a>
-            <a class="menu-element-lg" href="./blog.html">Blog</a>
-            <div class="twelve columns spacer-xsm"></div>
-            <a class="menu-element-sm" href="./contact.html">Contact</a>
-            <a class="menu-element-sm" target ="_blank" href="https://www.dribbble.com/pawelwaraksa">Dribbble</a>
-            <a class="menu-element-sm" target ="_blank" href="https://www.twitter.com/pawelwaraksa">Twitter</a>
-            <a class="menu-element-sm" target ="_blank" href="https://www.linkedin.com/in/pawelwaraksa">Linkedin</a>
-        </div>
-        </div>
+  <!-- HEADER START HERE ––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+  <div class="row">
+    <div class="spacer-custom-header twelve columns"></div>
+    <div class="header-title-small-left three columns">
+      <h2><a href="./index.html">Pawel Waraksa</a></h2>
+    </div>
+    <div class="header-title-small-right three columns offset-by-two">
+      <h2>Pawel&nbsp;&#9472;&nbsp;is a Product Designer living in London, United Kingdom.
+          Building next big thing at Revolut. Feel free to contact anytime.</h2>
+    </div>
 
-        </div>
-        </div>
+    <div class="menu one column u-pull-right">
+      <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./articles.html">Articles</a></li>
 
-        <!-- FULL SCREEN MENU ENDS HERE ––––––––––––––––––––––––––––––––––––– -->
+          <li><a href="https://www.dribbble.com/pawelwaraksa" a target="_blank">Dribbble</a></li>
+          <li><a href="https://www.twitter.com/pawelwaraksa" a target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/pawelwaraksa" a target="_blank">Linkedin</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <!-- HEADER ENDS HERE ––––––––––––––––––––––––––––––––––––– -->
 
-        <div class="u-full-width hero-section">
-            <!-- NAVIGATION BAR START HERE ––––––––––––––––––––––––––––––––––––– -->
-            <ul class="navigation">
-                <a class="logo" href="./index.html">Pawel&nbsp; &#9472; &nbsp;Waraksa</a>
-                <button class="menubtn" onclick="openNav()"></button>
-            </ul>
-        </div>
-
-            <!-- NAVIGATION BAR ENDS HERE ––––––––––––––––––––––––––––––––––––– -->
         <!-- SECTION 0 START HERE ––––––––––––––––––––––––––––––––––––– -->
 
         <div class="container">
         <div class="row">
-          <div class="twelve columns spacer-med"></div>
+          <div class="twelve columns spacer-sm"></div>
 
-            <a href="./blog/do-we-really-need.html" target="_blank">
-              <div class="six columns post-1">
+            <a href="./articles/do-we-really-need.html" target="_blank">
+              <div class="five columns post-1">
               <div class="twelve columns post-1-cover"></div>
               <div class="eight columns post-title">
                 <h1>Do we really need more Product Designers?</h1>
@@ -74,8 +72,8 @@
             </div>
             </a>
 
-            <a href="./blog/what-ive-learned.html" target="_blank">
-            <div class="five columns offset-by-one post-2">
+            <a href="./articles/what-ive-learned.html" target="_blank">
+            <div class="four columns offset-by-one post-2">
               <div class="twelve columns post-2-cover"></div>
               <div class="ten columns post-title">
                 <h1>What I've learned in 2017</h1>
@@ -89,8 +87,8 @@
         </div>
 
         <!-- SECTION 0 ENDS HERE ––––––––––––––––––––––––––––––––––––– -->
-        <!-- FOOTER STARTS HERE ––––––––––––––––––––––––––––––––––––– -->
 
+        <!-- FOOTER STARTS HERE ––––––––––––––––––––––––––––––––––––– -->
 
         <div class="footer-bg">
         <div class="container">
@@ -98,14 +96,9 @@
             <div class="twelve columns footer-spacer-top"></div>
             <div class="footer footer-links three columns">
               <ul>
-                  <li><a href="./about.html">About</a></li>
-                  <li><a href="./case-studies.html">Case Studies</a></li>
-                  <li><a href="./blog.html">Blog</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
-              </ul>
-            </div>
-            <div class="footer footer-social three columns">
-              <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./articles.html">Articles</a></li>
+
                   <li><a href="https://www.dribbble.com/pawelwaraksa" a target="_blank">Dribbble</a></li>
                   <li><a href="https://www.twitter.com/pawelwaraksa" a target="_blank">Twitter</a></li>
                   <li><a href="https://www.linkedin.com/in/pawelwaraksa" a target="_blank">Linkedin</a></li>
@@ -115,7 +108,6 @@
           </div>
           </div>
         </div>
-
         <!-- FOOTER ENDS HERE ––––––––––––––––––––––––––––––––––––– -->
 
         <!-- JS / DO NOT EDIT –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->

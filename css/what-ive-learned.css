@@ -47,112 +47,61 @@ body {
     height: 600px;
 }
 
-/* MENU FULLSCREEN
+/* HEADER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #111111;
-    overflow: hidden;
-    transition: 0.7s;
+.menu {
+  float: right;
 }
 
-.overlay-content {
-    position: relative;
-    overflow: hidden;
-    top: 20px;
-    max-width: 75%;
-    text-align: right;
-    float: right;
-    opacity: 0;
-    transition: 0.9s;
-    color: white;
+.menu a {
+  color: #7e8082;
+  font-size: 14px;
+  font-weight: 400;
+  position: fixed;
+  float: right;
 }
 
-@media (max-width: 1024px) {
-.overlay-content {
-    top: 40px;
-}
+.menu a:hover {
+  opacity: 0.4;
 }
 
-.overlay a {
-    margin-right: 100px;
-    text-decoration: none;
-    display: block;
+.menu li {
+  padding-bottom: 14px;
+}
+
+.spacer-custom-header {
+  height: 80px;
+}
+
+.header-title-small-left h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 1.8em;
+    margin-top: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.header-title-small-left:hover h2 {
+    color: black;
+    opacity: 0.4;
     transition: 0.4s;
 }
 
-@media (max-width: 1024px) {
-.overlay a {
-    margin-right: 40px;
-}
-}
-
-.menu-element-lg {
-    color: white;
-    font-size: 36px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 28px;
-}
-
-.menu-element-lg:hover {
-    color: #ffffff;
-}
-
-.menu-element-sm {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    color: #807e7e;
-}
-
-.menu-element-lg:hover {
-    opacity: 0.7;
-}
-
-.menu-element-sm:hover {
-    color: #ffffff;
-}
-
-/* NAVIGATION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.navigation {
-    padding-left: 0px;
-    padding-top: 0px;
-    margin: 0px;
-}
-
-.logo {
-    display: inline-block;
-    margin: 52px 0px 0px 60px;
-    font-weight: 500;
+.header-title-small-right h2 {
     color: black;
-    position: relative;
+    font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 1.8em;
+    margin-top: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
-.logo:hover {
-    opacity: 0.7;
-}
-
-.menubtn {
-    margin: 40px 60px 0px 0px;
-    padding: 20px;
-    background-color: transparent;
-    border:none;
-    background-image: url(../images/blog/what-ive-learned/menu.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    right: 0;
-    position: fixed;
-}
 
 /* TYPOGRAPHY
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
