@@ -54,6 +54,12 @@ body {
   float: right;
 }
 
+@media (max-width: 1366px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu a {
   color: #7e8082;
   font-size: 14px;

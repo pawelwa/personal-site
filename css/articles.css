@@ -71,6 +71,12 @@ body {
   float: right;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu a {
   color: #7e8082;
   font-size: 14px;
@@ -207,6 +213,12 @@ a {
   font-weight: 500;
   letter-spacing: 0.4px;
   line-height: 1.6em;
+}
+
+@media (max-width: 768px) {
+  .post-title h2 {
+    margin-bottom: 200px;
+  }
 }
 
 .post-1-cover {
