@@ -221,26 +221,32 @@ a {
   }
 }
 
-.post-1-cover {
-    height: 680px;
+.post-0-cover {
+    height: 540px;
     margin-bottom: 28px;
-    background-image: url(../images/blog/do-we-really-need.jpg);
+    background-image: url(../images/blog/instagram-video-experience/cover.gif);
+    background-size: cover;
+    background-position: center center;
+}
+
+.post-1-cover {
+    height: 720px;
+    margin-bottom: 28px;
+    background-image: url(../images/blog/do-we-really-need/cover.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 .post-2-cover {
-    height: 440px;
+    height: 480px;
     margin-bottom: 28px;
-    background-image: url(../images/blog/what-ive-learned.jpg);
+    background-image: url(../images/blog/what-ive-learned/cover.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-/* RIBBON
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.ribbon {
-  margin-top: 480px;
+.spacer-posts {
+  height: 140px;
 }
 
 /* FOOTER
