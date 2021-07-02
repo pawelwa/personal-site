@@ -103,29 +103,3 @@ a:hover {
   color:white;
   text-decoration: underline;
 }
-
-/*  FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.footer-nav a {
-  color:#878787;
-  font-size: 18px;
-  bottom: 0;
-}
-
-.footer-nav a:hover {
-  color:white;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.footer-nav-item {
-  padding-right: 16px;
-}
-
-@media screen and (min-width:1024px) {
-  .footer-nav-item {
-    padding-right: 32px;
-  }
-}
-
